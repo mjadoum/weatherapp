@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="./assets/weatherLogo.png" alt="" width="80" height="74" class="d-inline-block align-text-center">
+      Weather App - Group F
+    </a>
+  </div>
+</nav>
+  
+  <Weather msg="Welcome to Your Vue.js App"/>
+
+   
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Weather from "@/components/Weather.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Weather
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Tilt+Neon&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+}
+.navbar{
+height:70px;
+padding-top:0px !important;
+}
+.navbar-brand{
+font-family: 'Tilt Neon', sans-serif;
+font-size:30px !important;
+padding-top:0px !important;
+}
+ *,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    *,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 </style>
